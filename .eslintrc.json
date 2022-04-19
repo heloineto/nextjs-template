@@ -3,11 +3,7 @@
   "plugins": [
     "unused-imports"
   ],
-  "unused-imports/no-unused-imports": "error",
-  "sort-imports": [
-    "error",
-    {
-      "ignoreDeclarationSort": true
-    }
-  ]
+  "rules": {
+    "unused-imports/no-unused-imports": "error"
+  }
 }

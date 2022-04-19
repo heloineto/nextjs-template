@@ -1,10 +1,7 @@
-import { ReactElement } from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import createCache from '@emotion/cache';
-import { AppPropsType, AppType } from 'next/dist/shared/lib/utils';
-import { useTheme } from '@emotion/react';
-import { NextRouter } from 'next/router';
+import { AppType } from 'next/dist/shared/lib/utils';
 
 export default class MyDocument extends Document {
   render() {
