@@ -1,3 +1,4 @@
+import ColorScheme from '@lib/enums/ColorScheme';
 import { ThemeOptions, createTheme } from '@mui/material';
 import { useMemo } from 'react';
 import resolveConfig from 'tailwindcss/resolveConfig';
@@ -135,12 +136,15 @@ const themeOptions: ThemeOptions = {
   },
 };
 
-const useTheme = (darkMode: boolean) => {
+const useTheme = (colorScheme: ColorScheme) => {
   const theme = useMemo(() => {
-    themeOptions.palette = { ...themeOptions.palette, mode: darkMode ? 'dark' : 'light' };
+    themeOptions.palette = {
+      ...themeOptions.palette,
+      mode: colorScheme === ColorScheme.Dark ? 'dark' : 'light',
+    };
 
     return createTheme(themeOptions);
-  }, [darkMode]);
+  }, [colorScheme]);
 
   return theme;
 };
