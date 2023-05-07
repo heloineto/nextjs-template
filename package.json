@@ -7,13 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "spell": "cspell \"*\""
+    "spell": "cspell *",
+    "format": "prettier --write . --ignore-path .gitignore"
   },
   "dependencies": {
+    "@cspell/dict-pt-br": "^2.1.4",
     "@types/node": "20.1.0",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "cspell": "^6.31.1",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
     "next": "13.4.1",
@@ -21,9 +24,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4",
-    "@cspell/dict-pt-br": "^2.1.4",
-    "cspell": "^6.31.1"
+    "typescript": "5.0.4"
   },
   "postcss": {
     "plugins": {
@@ -57,5 +58,9 @@
       "Parens",
       "esnext"
     ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "2.8.8"
   }
 }
