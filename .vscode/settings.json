@@ -1,0 +1,13 @@
+{
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.fixAll",
+    "source.organizeImports"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.packageManager": "pnpm",
+  "files.exclude": {
+    ".next": true
+  },
+  "editor.formatOnSave": true
+}

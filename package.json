@@ -12,25 +12,32 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@cspell/dict-pt-br": "^2.1.4",
     "@types/node": "20.1.0",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
     "autoprefixer": "10.4.14",
     "cspell": "^6.31.1",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-cypress": "^2.13.3",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.11.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "next": "13.4.1",
     "postcss": "8.4.23",
     "prettier": "2.8.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4",
-    "@commitlint/cli": "^17.6.3",
-    "@commitlint/config-conventional": "^17.6.3",
-    "lint-staged": "^13.2.2"
+    "typescript": "5.0.4"
   },
   "postcss": {
     "plugins": {
@@ -68,14 +75,16 @@
       "node_modules",
       "dist",
       "public",
-      "pnpm-lock.yaml"
+      "pnpm-lock.yaml",
+      ".vscode"
     ],
     "words": [
-      "nextjs",
-      "tailwindcss",
-      "Parens",
+      "classname",
+      "commitlint",
       "esnext",
-      "commitlint"
+      "nextjs",
+      "parens",
+      "tailwindcss"
     ]
   }
 }
