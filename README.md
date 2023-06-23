@@ -12,3 +12,4 @@
 - [Cypress](https://www.cypress.io/)
 - [Mixpanel](https://mixpanel.com/)
 - [i18next](https://www.i18next.com/)
+- [CSpell](https://cspell.org/)
