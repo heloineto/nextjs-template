@@ -8,7 +8,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   overrides: [
     {
-      files: ['{app,components}/**/*.{ts,tsx}'],
+      files: ['{app,pages,components}/**/*.{ts,tsx}'],
       extends: [
         'plugin:@typescript-eslint/strict',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -25,7 +25,6 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint'],
   rules: {
-    'no-shadow': 'error',
     'no-console': 'warn',
     '@typescript-eslint/consistent-type-imports': 'error',
     'react/self-closing-comp': 'error',

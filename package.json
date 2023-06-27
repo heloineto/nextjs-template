@@ -44,8 +44,8 @@
     "semi": true
   },
   "lint-staged": {
-    "{app,components}/**/*.*": "prettier --write",
-    "{app,components}/**/*.{js,jsx,ts,tsx}": "eslint --fix"
+    "{app,pages,components}/**/*.*": "prettier --write",
+    "{app,pages,components}/**/*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "commitlint": {
     "extends": [
